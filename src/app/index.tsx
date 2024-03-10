@@ -15,7 +15,7 @@ export default function SignIn() {
     const [userId, setUserId] = useState({} as User[]);
 
     function handleSignIn() {
-        return router.push('/(auth-routes)/')
+        return router.push('/(auth)/')
     }
 
     useEffect(() => {

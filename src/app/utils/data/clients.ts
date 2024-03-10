@@ -1,0 +1,58 @@
+import { Client } from "@/DTO/ClientDTO";
+
+export const clients: Client[] = [
+    {
+        id: '1',
+        bairro: 'São Miguel',
+        cidade: 'Colatina',
+        cpf_cnpj: '123.456.789-10',
+        razao: 'Lucas',
+        contribuinte: 'S',
+        email: 'teste@hotmail.com',
+        endereco: 'teste',
+        fantasia: 'Lucas',
+        uf: 'ES',
+        situacao: 'Ativo',
+        telefone: '(27)999999999',
+        tipo_pessoa: 'F',
+        obs: '',
+        rota: '',
+        visita: ''
+    },
+    {
+        id: '2',
+        bairro: 'São Miguel',
+        cidade: 'Colatina',
+        cpf_cnpj: '123.456.789-10',
+        razao: 'Lucas',
+        contribuinte: 'S',
+        email: 'teste@hotmail.com',
+        endereco: 'teste',
+        fantasia: 'Lucas',
+        uf: 'ES',
+        situacao: 'Ativo',
+        telefone: '(27)999999999',
+        tipo_pessoa: 'F',
+        obs: '',
+        rota: '',
+        visita: ''
+    },
+    {
+        id: '3',
+        bairro: 'São Miguel',
+        cidade: 'Colatina',
+        cpf_cnpj: '123.456.789-10',
+        razao: 'Lucas',
+        contribuinte: 'S',
+        email: 'teste@hotmail.com',
+        endereco: 'teste',
+        fantasia: 'Lucas',
+        uf: 'ES',
+        situacao: 'Ativo',
+        telefone: '(27)999999999',
+        tipo_pessoa: 'F',
+        obs: '',
+        rota: '',
+        visita: ''
+    },
+]
