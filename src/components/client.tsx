@@ -1,4 +1,5 @@
 import { Client } from "@/DTO/ClientDTO"
+import { Link, LinkProps } from "expo-router";
 import { Text, TouchableOpacity, TouchableOpacityProps, View } from "react-native";
 
 type ClientData = Client;
