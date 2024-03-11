@@ -1,12 +1,24 @@
-import { useLocalSearchParams } from "expo-router";
+import { Client } from "@/DTO/ClientDTO";
+import { RouterHeader } from "@/components/router-header";
+import { router, useGlobalSearchParams, useLocalSearchParams } from "expo-router";
+import { useEffect } from "react";
 import { View, Text } from "react-native";
 
+
 export default function ClientInfo() {
-    const { client } = useLocalSearchParams();
+    const { id } = useLocalSearchParams();
+
+    function handleGoBack() {
+        return router.back();
+    }
+
+    useEffect(() => {
+        console.log(id);
+    }, [])
 
     return (
-        <View>
-            <Text>{client}</Text>
-        </View>
+        <RouterHeader title="Cliente" onPress={handleGoBack}>
+            <Text></Text>
+        </RouterHeader>
     )
 }

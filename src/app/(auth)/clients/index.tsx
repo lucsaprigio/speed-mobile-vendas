@@ -15,8 +15,8 @@ export default function Clients() {
         return router.back();
     }
 
-    function handleShowClient(client: Client) {
-        return router.push({ pathname: `/client/${client.id}`, params: { ...client } });
+    function handleShowClient(id: string) {
+        return router.push(`/client/${id}`);
     }
 
     const [searchClient, setSearchClient] = useState('');
@@ -48,7 +48,7 @@ export default function Clients() {
                 {
                     clientList.map((client) => (
                         <ClientCard
-                            onPress={() => handleShowClient(client)}
+                            onPress={() => handleShowClient(client.id)}
                             key={client.id}
                             client={{
                                 id: client.id,
