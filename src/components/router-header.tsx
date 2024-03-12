@@ -4,7 +4,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import colors from "tailwindcss/colors";
 
 type Props = TouchableOpacityProps & {
-    title: string;
+    title: string | any;
     children: React.ReactNode;
 }
 
