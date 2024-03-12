@@ -13,17 +13,13 @@ export default function ClientInfo() {
 
     const client = clients.find(item => item.id === id);
 
-    function handleGoBack() {
-        return router.back();
-    }
-
     useEffect(() => {
         console.log(client);
     }, [])
 
     return (
         <>
-            <RouterHeader title="Informações do Cliente" onPress={handleGoBack}>
+            <RouterHeader title="Informações do Cliente">
                 <View className="flex items-center justify-center">
                     <Text className="text-gray-50 text-2xl font-heading my-3">{client?.id} - {client?.razao}</Text>
                 </View>

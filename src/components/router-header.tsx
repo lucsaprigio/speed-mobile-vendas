@@ -1,4 +1,5 @@
 import { Feather } from "@expo/vector-icons";
+import { useRouter } from "expo-router";
 import { Text, TextInput, TouchableOpacity, TouchableOpacityProps, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import colors from "tailwindcss/colors";
@@ -9,10 +10,12 @@ type Props = TouchableOpacityProps & {
 }
 
 export function RouterHeader({ title, children, ...rest }: Props) {
+    const router = useRouter();
+
     return (
         <SafeAreaView className="bg-blue-950 p-5">
             <View className="flex flex-row items-center justify-between mb-3">
-                <TouchableOpacity {...rest}>
+                <TouchableOpacity onPress={() => router.back()}>
                     <Feather
                         name="chevron-left"
                         size={24}
@@ -23,6 +26,6 @@ export function RouterHeader({ title, children, ...rest }: Props) {
                 <View></View>
             </View>
             {children}
-        </SafeAreaView>
+        </SafeAreaView >
     )
 }

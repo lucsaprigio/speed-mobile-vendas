@@ -1,7 +1,11 @@
-export type ProductDTO = {
+export type Product = {
     id: string;
-    title: string;
-    subtitle: string;
-    price: number;
-    category: string;
+    descricao: string;
+    ean: string;
+    ncm: string;
+    cest: string;
+    preco: number;
+    embalagem: string;
+    saldo?: number;
+    linha?:string;
 }

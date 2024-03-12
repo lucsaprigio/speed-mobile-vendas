@@ -9,7 +9,7 @@ type IconButtonProps = TouchableOpacityProps & {
 
 export function IconButton({ title, iconName, ...rest }: IconButtonProps) {
     return (
-        <TouchableOpacity className="flex items-center justify-center w-24 h-24 m-6 bg-blue-950 rounded-md" {...rest}>
+        <TouchableOpacity className="flex items-center justify-center w-24 h-24 m-3 bg-blue-950 rounded-md" {...rest}>
             <Feather
                 name={iconName}
                 size={24}
